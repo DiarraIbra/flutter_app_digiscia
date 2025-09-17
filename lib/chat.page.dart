@@ -363,14 +363,14 @@ class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
 
                                 try {
                                   const String apiKey =
-                                      "AIzaSyArRR_lF363y22DmmYIZ7KUY2W3FYpnmyE";
+                                      "your_api_key_here"; // Remplacez par votre clé API
 
                                   final url = Uri.parse(
                                     "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=$apiKey",
                                   );
 
                                   final headers = {
-                                    "Content-Type": "application/json",
+                                    -"Content-Type": "application/json",
                                   };
 
                                   final body = json.encode({
